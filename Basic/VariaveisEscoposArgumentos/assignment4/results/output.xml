@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240206 16:55:12.521" rpa="false" schemaversion="4">
+<suite id="s1" name="Assignment4 Tests" source="C:\Users\Kraga\Cursos Prog\RobotFramework\VariaveisEscoposArgumentos\assignment4\assignment4_tests.robot">
+<test id="s1-t1" name="Test Case 01 - Print Dict" line="7">
+<kw name="Print dict">
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: January - Dias: ${DAYS_PER_MONTH.january}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.539" endtime="20240206 16:55:12.539"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: February - Dias: ${DAYS_PER_MONTH.february}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.539" endtime="20240206 16:55:12.540"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: March - Dias: ${DAYS_PER_MONTH.march}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.540" endtime="20240206 16:55:12.540"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: April - Dias: ${DAYS_PER_MONTH.april}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.540" endtime="20240206 16:55:12.540"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: May - Dias: ${DAYS_PER_MONTH.may}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.541" endtime="20240206 16:55:12.541"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: June - Dias: ${DAYS_PER_MONTH.june}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.541" endtime="20240206 16:55:12.541"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: July - Dias: ${DAYS_PER_MONTH.july}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.541" endtime="20240206 16:55:12.542"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: August - Dias: ${DAYS_PER_MONTH.august}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.542" endtime="20240206 16:55:12.542"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: September - Dias: ${DAYS_PER_MONTH.september}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.542" endtime="20240206 16:55:12.542"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: October - Dias: ${DAYS_PER_MONTH.october}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.542" endtime="20240206 16:55:12.543"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: November - Dias: ${DAYS_PER_MONTH.november}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.543" endtime="20240206 16:55:12.543"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message=Mês: December - Dias: ${DAYS_PER_MONTH.december}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240206 16:55:12.544" endtime="20240206 16:55:12.544"/>
+</kw>
+<status status="PASS" starttime="20240206 16:55:12.538" endtime="20240206 16:55:12.544"/>
+</kw>
+<status status="PASS" starttime="20240206 16:55:12.538" endtime="20240206 16:55:12.544"/>
+</test>
+<status status="PASS" starttime="20240206 16:55:12.522" endtime="20240206 16:55:12.545"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment4 Tests">Assignment4 Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
