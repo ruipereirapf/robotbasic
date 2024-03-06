@@ -16,6 +16,7 @@ Test Case 01 - Access menu "Eletrônicos"
     Then page title should be "Eletrônicos e Tecnologia | Amazon.com.br"
     And the text "Eletrônicos e Tecnologia" must be in the page
     And the category "Computadores e Informática" must be in the page
+    #CLAUDIOTEST
 
 
 Test Case 02 - Product Search
