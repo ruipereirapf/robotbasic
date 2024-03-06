@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240206 12:53:47.850" rpa="false" schemaversion="4">
+<suite id="s1" name="Amazon Test Gherkin Bdd" source="C:\Users\Kraga\Cursos Prog\RobotFramework\amazon_webtest\amazon_test gherkin_bdd.robot">
+<test id="s1-t1" name="Test Case 04 - Remove product from cart" line="39">
+<kw name="Abrir_Browser" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240206 12:53:48.017" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20240206 12:53:48.017" endtime="20240206 12:53:49.282"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240206 12:53:49.282" endtime="20240206 12:53:49.398"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:48.016" endtime="20240206 12:53:49.398"/>
+</kw>
+<kw name="Given I am on the Amazon home page" library="amazon_resources">
+<kw name="Access amazon home page" library="amazon_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240206 12:53:49.398" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<status status="PASS" starttime="20240206 12:53:49.398" endtime="20240206 12:53:50.119"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240206 12:53:50.119" endtime="20240206 12:53:50.137"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:49.398" endtime="20240206 12:53:50.137"/>
+</kw>
+<kw name="Verify if page title is &quot;Amazon.com.br | Tudo pra você, de A a Z.&quot;" library="amazon_resources" sourcename="Verify if page title is &quot;${TITLE}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20240206 12:53:50.173" level="INFO">Page title is 'Amazon.com.br | Tudo pra você, de A a Z.'.</msg>
+<status status="PASS" starttime="20240206 12:53:50.138" endtime="20240206 12:53:50.173"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:50.137" endtime="20240206 12:53:50.173"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:49.398" endtime="20240206 12:53:50.173"/>
+</kw>
+<kw name="And the product &quot;Console Xbox Series S&quot; is on the cart" library="amazon_resources">
+<kw name="Write product name &quot;Xbox Series S&quot; in search bar" library="amazon_resources" sourcename="Write product name &quot;${PRODUCT_NAME}&quot; in search bar">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${SEARCH_BAR}</arg>
+<arg>text=${PRODUCT_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240206 12:53:50.174" level="INFO">Typing text 'Xbox Series S' into text field '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" starttime="20240206 12:53:50.174" endtime="20240206 12:53:50.279"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:50.174" endtime="20240206 12:53:50.279"/>
+</kw>
+<kw name="Click search button" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${SEARCH_ICON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240206 12:53:50.279" level="INFO">Clicking element '//span[@aria-label='Ir']'.</msg>
+<status status="PASS" starttime="20240206 12:53:50.279" endtime="20240206 12:53:51.736"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:50.279" endtime="20240206 12:53:51.736"/>
+</kw>
+<kw name="Verify if searched result is listing searched product &quot;Console Xbox Series S&quot;" library="amazon_resources" sourcename="Verify if searched result is listing searched product &quot;${PRODUCT_NAME}&quot;">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=(//span[contains(.,'${PRODUCT_NAME}')])[3]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240206 12:53:51.736" endtime="20240206 12:53:51.753"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:51.736" endtime="20240206 12:53:51.753"/>
+</kw>
+<kw name="Add product &quot;Console Xbox Series S&quot; to cart" library="amazon_resources" sourcename="Add product &quot;${PRODUCT_NAME}&quot; to cart">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//span[contains(.,'${PRODUCT_NAME}')])[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240206 12:53:51.753" level="INFO">Clicking element '(//span[contains(.,'Console Xbox Series S')])[3]'.</msg>
+<status status="PASS" starttime="20240206 12:53:51.753" endtime="20240206 12:53:54.687"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${ADD_CART}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240206 12:53:54.687" endtime="20240206 12:53:54.702"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${ADD_CART}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240206 12:53:54.702" level="INFO">Clicking element '//input[contains(@name,'submit.add-to-cart')]'.</msg>
+<status status="PASS" starttime="20240206 12:53:54.702" endtime="20240206 12:53:55.538"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:51.753" endtime="20240206 12:53:55.538"/>
+</kw>
+<kw name="Verify if product &quot;Console Xbox Series S&quot; has been added" library="amazon_resources" sourcename="Verify if product &quot;${PRODUCT_NAME}&quot; has been added">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${CART}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240206 12:53:55.539" endtime="20240206 12:53:55.570"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${CART}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240206 12:53:55.570" level="INFO">Clicking element '//a[@class='nav-a nav-a-2 nav-progressive-attribute']'.</msg>
+<status status="PASS" starttime="20240206 12:53:55.570" endtime="20240206 12:53:56.358"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//span[@class='a-truncate-cut'][contains(.,'${PRODUCT_NAME}')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240206 12:53:56.358" endtime="20240206 12:53:56.382"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:55.538" endtime="20240206 12:53:56.382"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:50.174" endtime="20240206 12:53:56.382"/>
+</kw>
+<kw name="When I remove the product &quot;Console Xbox Series S&quot; from the cart" library="amazon_resources">
+<kw name="Remove product &quot;Console Xbox Series S&quot; from cart" library="amazon_resources" sourcename="Remove product &quot;${PRODUCT_NAME}&quot; from cart">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//input[@aria-label='Excluir ${PRODUCT_NAME}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240206 12:53:56.383" level="INFO">Clicking element '//input[@aria-label='Excluir Console Xbox Series S']'.</msg>
+<status status="PASS" starttime="20240206 12:53:56.383" endtime="20240206 12:53:56.441"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:56.382" endtime="20240206 12:53:56.441"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:56.382" endtime="20240206 12:53:56.441"/>
+</kw>
+<kw name="Then Then cart should be empty" library="amazon_resources">
+<kw name="Verify if shopping cart is empty" library="amazon_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${CART}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240206 12:53:56.442" endtime="20240206 12:53:56.456"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${CART}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240206 12:53:56.457" level="INFO">Clicking element '//a[@class='nav-a nav-a-2 nav-progressive-attribute']'.</msg>
+<status status="PASS" starttime="20240206 12:53:56.456" endtime="20240206 12:53:56.946"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>locator=//h2[contains(.,'Seu carrinho da Amazon está vazio')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240206 12:53:56.946" endtime="20240206 12:53:56.953"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:56.442" endtime="20240206 12:53:56.953"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:56.442" endtime="20240206 12:53:56.953"/>
+</kw>
+<kw name="Fechar_Browser" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240206 12:53:57.079" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240206 12:53:56.954" endtime="20240206 12:53:57.079"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240206 12:53:57.079" endtime="20240206 12:53:59.225"/>
+</kw>
+<status status="PASS" starttime="20240206 12:53:56.954" endtime="20240206 12:53:59.225"/>
+</kw>
+<doc>This test Verifys if a product is removed from the cart</doc>
+<tag>remove_cart</tag>
+<status status="PASS" starttime="20240206 12:53:48.016" endtime="20240206 12:53:59.225"/>
+</test>
+<doc>This suite tests webwise amazon.com.br</doc>
+<status status="PASS" starttime="20240206 12:53:47.851" endtime="20240206 12:53:59.226"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">remove_cart</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon Test Gherkin Bdd">Amazon Test Gherkin Bdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
