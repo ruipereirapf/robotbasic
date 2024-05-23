@@ -2,8 +2,7 @@
 
 ## Course Description
 
-This repository contains all the code written during the exercises and projects of the [Automation Testing with Robot Framework - Basic](https://www.udemy.com/course/automacao-de-testes-com-robot-framework-basico) course.
-This course offers a comprehensive introduction to Robot Framework, an open-source test automation tool. It covers various topics including Robot Framework installation and configuration, creation of UI tests, and execution of automated tests.
+This repository contains all the code written during the exercises and projects of the [Automation Testing with Robot Framework - Basic](https://www.udemy.com/course/automacao-de-testes-com-robot-framework-basico) course. This course offers a comprehensive introduction to Robot Framework, an open-source test automation tool. It covers various topics including Robot Framework installation and configuration, creation of UI tests, and execution of automated tests.
 
 ## Repository Contents
 
