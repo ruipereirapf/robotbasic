@@ -23,3 +23,7 @@ The Automation Testing with Robot Framework - Basic course is designed for softw
 ## Repository Purpose
 
 This repository serves as a collection of all the code written during the course. It includes every line of code from the exercises and projects, providing a complete reference for the automation testing concepts covered.
+
+## Contact Information
+
+Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/ruifernpereira/) for any questions or collaborations.
